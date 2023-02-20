@@ -1,0 +1,143 @@
+<html>
+    <head>
+        <title>Intro_to_NAResEngFY2022</title>
+        <!--MathJaxの設定-->
+        <script type="text/x-mathjax-config">
+            MathJax.Hub.Config({ tex2jax: { inlineMath: [['$','$'], ["\\(","\\)"]] } });
+          </script>
+          <script type="text/javascript"
+            src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML">
+          </script>
+          <meta http-equiv="X-UA-Compatible" CONTENT="IE=EmulateIE7" />
+        <link rel="stylesheet" type="text/css" href="css/style.css"> 
+    </head>
+    <body>
+        <main style="width: 75%;padding-left: 3%;padding-right: 3%;" >
+            <h1 style="text-align: center;color: rgb(0, 61, 111);padding-top: 10px;">
+                数値計算基礎 / 貯留層工学入門 講座
+            </h1>
+
+            <h2 style="border-bottom: solid rgb(0, 61, 111);">
+                はじめに
+            </h2>
+            <p>
+                　本講座は、地球熱システム学研究室に配属された学部4年生に、数値計算の基礎を解説し、貯留層工学に興味を持ってもらう為のものです。<b>最短で多相流解析コードを書ける事</b>を目的にしたため、
+                一般的な数値計算の講義でまず解説される誤差の話題は省略しています。また、貯留層工学のセクションでも、孔隙率の定義、ヤングの方程式、濡れ性、etc.などの微視的視点のテーマには触れていません。
+                必要に応じて、学部2・3年生で履修した<b>「石油工学」</b><b>「地熱貯留層工学」</b>の資料を見返したり、その他書籍・インターネットを参照して復習したりしていただければと思います。この講座全体の内容と位置づけ、参考資料は以下の資料をご覧ください。
+                <ul>
+                    <li>イントロダクション:[<a href="Intro_OverAll.pdf">pdf</a>][<a href="Intro_OverAll.pptx">pptx</a>]</li>
+                    <li>石油開発のながれ:[<a href="Intro_OilDev.pdf">pdf</a>]</li>
+                    <li>HTMLの概要</li>
+                </ul>
+            </p>
+
+            <!--NA_Beg-->
+            <h2 style="border-bottom: solid rgb(0, 61, 111);">
+                数値計算基礎（初級）
+            </h2>
+            <ul>
+                <li>常微分方程式の時間積分（その1）:
+                    [<a href="NA_Beg/ODE_01.pdf">pdf</a>]
+                    [<a href="NA_Beg/ODE_01.pptx">pptx</a>]
+                    [<a href="NA_Beg/ODE_freefall.py">.py演習</a>]
+                    [<a href="NA_Beg/ODE_freefall_ans.py">.py解答</a>]
+                    [<a href="NA_Beg/ODE_freefall.xlsx">.xlsx</a>]</li>
+
+                <li>常微分方程式の時間積分（その2）:
+                    [<a href="NA_Beg/ODE_02.pdf">pdf</a>]
+                    [<a href="NA_Beg/ODE_02.pptx">pptx</a>]</li>
+
+                <li>移流方程式と差分法:
+                    [<a href="NA_Beg/Advection.pdf">pdf</a>]
+                    [<a href="NA_Beg/Advection.pptx">pptx</a>]
+                    [<a href="NA_Beg/Advection_exact1D.py">.py解析解</a>]
+                    [<a href="NA_Beg/Advection_upwind.py">.py演習</a>]
+                    [<a href="NA_Beg/Advection_upwind.ipynb">.ipynb演習</a>]
+                    [<a href="NA_Beg/Advection_upwind_ans.m">.py解答</a>]</li>
+
+                <li>ImageMagickによるgifの作成:
+                    [<a href="NA_Beg/Gif_Image.pdf">pdf</a>]
+                    [<a href="NA_Beg/Gif_Image.pptx">pptx</a>]</li>
+            </ul>
+
+            <!--NA_Med-->
+            <h2 style="border-bottom: solid rgb(0, 61, 111);">
+                数値計算基礎（中級）
+            </h2>
+            <ul>
+                <li>拡散方程式（陽解法）:
+                    [<a href="NA_Med/Diffusion1D_Explicit.pdf">pdf</a>]
+                    [<a href="NA_Med/Diffusion1D_Explicit.pptx">pptx</a>]
+                    [<a href="NA_Med/Diffusion1d_Explicit.py">.py演習</a>]
+                    [<a href="NA_Med/Diffusion1D_Explicit.ipynb">.ipynb演習</a>]
+                    [<a href="NA_Med/Diffusion1D_Explicit_ans.py">.py解答</a>]
+                    [<a href="NA_Med/Diffusion1D_Explicit_ans.ipynb">ipynb解答</a>]</li>
+
+                <li>拡散方程式（陰解法）:
+                    [<a href="NA_Med/Diffusion1D_Implicit.pdf">pdf</a>]
+                    [<a href="NA_Med/Diffusion1D_Implicit.pptx">pptx</a>]
+                    [<a href="NA_Med/Diffusion1d_Implicit.py">.py演習</a>]
+                    [<a href="NA_Med/Diffusion1D_Implicit.ipynb">.ipynb演習</a>]
+                    [<a href="NA_Med/Diffusion1D_Implicit_ans.py">.py解答</a>]
+                    [<a href="NA_Med/Diffusion1D_Implicit_ans.ipynb">ipynb解答</a>]</li>
+
+                <li>疎行列:
+                    [<a href="NA_Med/SparseMatrix.html">html</a>]
+                    [<a href="NA_Med/SparseMatrix.ipynb">.ipynb</a>]</li>
+
+                <li>関数プログラミング:
+                    [<a href="NA_Med/Function.pdf">pdf</a>]
+                    [<a href="NA_Med/Function.pptx">pptx</a>]
+                    [<a href="NA_Med/Function_Programming.zip">zip演習用</a>]</li>
+
+                <li>線形と非線形
+                    :[<a href="NA_Med/LinearAndNonlinear.pdf">pdf</a>]</li>
+            </ul>
+
+            <!--ResEng-->
+            <h2 style="border-bottom: solid rgb(0, 61, 111);">
+                貯留層工学入門
+            </h2>
+            <ul>
+                <li>相対浸透率</li>
+                
+                <li>石油天然ガスと地熱流体:
+                    [<a href="ResEng/ResFluid.pdf">pdf</a>]
+                    [<a href="ResEng/ResFluid.pptx">pptx</a>]</li>
+                
+                <li>水油2相流れ</li>
+                
+                <li>
+                    IMPES法
+                    <ul>
+                        <li>関数プログラミング</li>
+                    </ul>
+                </li>
+
+                <li>地熱貯留層の多相流
+                    <ul>　水と蒸気は化学式で表せばどちらもH2Oとなり、同一の物質と言える。実際の地熱貯留層でも生産・還元にともない、
+                        水が蒸気に、蒸気が水に変化することはよくある。 その為、地熱貯留層の二相流解析には、質量保存則に加えて、
+                        エネルギー保存則も考慮し、流体の状態を算出しなければならない。
+                        エネルギー保存則は温度に注目する方法と（比）エンタルピーに注目する方法がある。 
+                        TOUGHは前者を実装しており、Hydrothermは後者を実装している。
+                    </ul>
+                </li>
+
+                <li>坑井試験
+                    <ul>
+                        <li>坑井試験の基礎の基礎:[<a href="ResEng/WellTest_Intro.pdf">pdf</a>]</li>
+
+                    </ul>
+                </li>
+            </ul>
+          <!--フッター始まり-->
+        <div >
+            <footer >
+            <p class="copyright" style="color: black;margin-right : 50px; margin-left : 40px; text-align: center;">
+            &copy; 2021 hirose 
+            </p>
+            </footer>
+        </div>
+        </main>
+    </body>
+</html>
