@@ -1,6 +1,6 @@
 # Introduction to Numerical Analysis and Reservoir Engineering
 九州大学地球熱システム学研究室に配属された学部4年生向けの研修に使用された資料
-These files were used to teach fundermentals of Numerical Analysis and Reservoir simulation to senior students who belong to Laboratory of Geothermics, Kyushu University.
+These files were used to teach fundermentals of Numerical Analysis and Reservoir simulation to senior students who belong to the Laboratory of Geothermics, Kyushu University.
 ## Directory structure
 ```
 Intro_to_NAResEng2022
